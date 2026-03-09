@@ -1,13 +1,14 @@
 class Calculator:
+    BONUS = 5
 
     def aduna(self, a, b):
-        bonus = 5
-        return a + b + bonus
+        return a + b + self.BONUS
 
 
 def main():
     calc = Calculator()
-    print("Rezultat:", calc.aduna(5, 10))
+    rezultat = calc.aduna(5, 10)
+    print("Rezultat:", rezultat)
 
 
 if __name__ == "__main__":
